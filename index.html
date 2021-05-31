@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!--Font from google font-->
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Odibee+Sans&display=swap" rel="stylesheet"> 
+
+
+<!--Favourite Icon-->
+<link rel="shortcut icon" href="./images/icon.ico" type="image/x-icon"/>
+    <title>Surf and Skate</title>
+
+<!--glide.js <link>-->
+<link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.core.min.css"
+/>
+<link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.theme.min.css"
+>
+
+<!--Animate on Scroll-->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<!--StyleSheet-->
+<link rel="stylesheet" href="styles.css"/>
+
+</head>
+<body background="./images/surf-background1.jpg">
+    <!--header-->
+ <header class="header" id="header">
+<!--Navigation-->
+<div class="navigation">
+    <div class="container">
+      <nav class="nav"> 
+          <div class="nav__hamburger">
+
+            <!--SVG CHANGE TO PNG-->
+              <svg>
+<use xlink:href="./images/sprit.svg#icon-menu"/>
+
+
+              </svg>
+
+
+          </div>
+          <div class="nav__logo">
+              <a href="/" class="scroll-link">SurfandSkate</a>
+          </div>
+
+          <div class="nav__menu open">
+              <div class="menu__top">
+                  <span class="nav__category">SurfBoards</span>
+                <a href="#" class="close__toggle">
+
+            <!--SVG CHANGE TO PNG-->
+                    <svg>
+                        <use xlink:href="./images/sprite.svg#icon-menu"></use>
+                        
+                    
+
+                                      </svg>
+                
+                </a>
+              </div>
+              <ul class="nav__list">
+                <li class="nav__item">
+                    <a href="#home" class="nav__link scroll">Home</a>
+                </li>
+            
+                <li class="nav__item">
+                    <a href="#category" class="nav__link scroll">Category</a>
+                </li>
+            
+                <li class="nav__item">
+                    <a href="#news" class="nav__link scroll">Blog</a>
+                </li>
+            
+                <li class="nav__item">
+                    <a href="#contact" class="nav__link scroll">Contact</a>
+                </li>
+            
+            </ul>
+          </div>
+
+<!--ICONS-->
+
+<div class="nav__icons">
+<a href="#cart" class="icon__item">
+
+   <!--SVG CHANGE TO PNG-->
+<svg>
+
+    <use xlink:href="./images/sprite.svg#icon-shopping-basket"></use>
+    
+</svg>
+
+</a>
+
+<a href="#user" class="icon__item">
+
+    <!--SVG CHANGE TO PNG-->
+    <svg>
+     <use xlink:href="./images/sprite.svg#icon-user"></use>
+     
+                   </svg>
+ 
+ </a>
+
+ <a href="#search" class="icon__item">
+
+    <!--SVG CHANGE TO PNG-->
+    <svg>
+     <use xlink:href="./images/sprite.svg#icon-search"></use>
+     
+    </svg>
+ <span id="cart__total">0</span>
+ </a>
+    
+</div>
+      </nav>
+    </div>
+</div>
+
+ </header>
+    <!--Area-->
+
+    <!--Glide.js-->
+    <script src="node_modules/@glidejs/glide/dist/glide.min.js"></script>
+
+    <!--AOS "Animate on Scroll"-->
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!--Script-->
+<script src="./js/index.js"></script>
+<script src="./js/slider.js"></script>
+<script src="./js/products.js"></script>
+
+</body>
+</html>
