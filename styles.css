@@ -101,7 +101,7 @@ display: none;
 cursor: pointer;
 
 }
-.nav__hamburger svg {
+.nav__hamburger i{
 height: 2.3rem;
 width: 23rem;
 
@@ -149,7 +149,7 @@ position: relative;
 
 }
 
-.nav__icons .icon__item svg{
+.nav__icons .icon__item i{
 
     width: 1.6rem;
     height: 1.6rem;
@@ -231,12 +231,16 @@ width: 30rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: var(--orange);
+    background-color: var(--grey3);
     padding: 1.8rem 1rem;
 }
+ /*
 
+ Font Awesome Stuff
 
-.menu__top svg{
+ */
+
+.menu__top i{
 
     height: 1.6rem;
     width: 1.6rem;
@@ -288,5 +292,67 @@ body.active::before{
     transition: .8s;
 }
 
+@media only screen and (max: width 568px){
+
+    .nav__icons .icon__item i{
+width: 1.5rem;
+height: 1.5rem;
+
+    }
+    .nav__icons .icon__item{
+
+        padding: .5rem;
+       
+            }
+
+
+
 }
 
+
+
+}
+
+/* 
+Hero Area 
+*/
+
+
+.hero,
+.hero .glide__slides{
+
+    background-color: var(--primaryColor);
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+.hero .glide__bullet{
+
+    background-color: var(--black);
+    width: 1.2rem;
+    height: 1.2rem;
+}
+
+.hero .glide__arrow{
+
+    padding: 1.5rem 1.7rem;
+    opacity: 0;
+    border: none;
+    background-color: var(--grey);
+    transition: all 0.5s ease-in-out 0.2s;
+}
+
+.glide__arrow:hover{
+
+    background-color: var(--black3);
+
+}
+
+.glide__arrow--left{
+
+    left: 20rem;
+}
+.glide__arrow--right{
+    position: absolute;
+    right: 20rem;
+}
