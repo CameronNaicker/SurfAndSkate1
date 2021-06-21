@@ -10,13 +10,13 @@
 <script defer src="js/all.js"></script>
 <!--Font from google font-->
 <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Odibee+Sans&display=swap" rel="stylesheet"> 
-
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,300&display=swap" rel="stylesheet"> 
 
 <!--Favourite Icon-->
 <link rel="shortcut icon" href="./images/icon.ico" type="image/x-icon"/>
-    <title>Surf and Skate</title>
-
+    <title>Home - Surf and Skate</title>
+ 
 <!--glide.js <link>-->
 <link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.core.min.css"
 />
@@ -30,81 +30,81 @@
 
 </head>
 <body>
-    <!--header-->
+        <!--header-->
  <header class="header" id="header">
-<!--Navigation-->
-<div class="navigation">
-    <div class="container">
+    <!--Navigation-->
+    <div class="navigation">
+        <div class="container">
+          <nav class="nav"> 
       <nav class="nav"> 
-          <div class="nav__hamburger">
-
-            <i class="fas fa-align-justify"></i>
-
-          </div>
-         
-          <div class="nav__logo">
-         
-              <a href="/" class="scroll-link">SurfandSkate</a>
-            
-          </div>
-
-          <div class="nav__menu open">
-              <div class="menu__top">
-                  <span class="nav__category">SurfandSkate</span>
-                <a href="#" class="close__toggle">
-
-            <!--Menu icon from font awesome-->
-                
-            <i class="fas fa-times"></i>
-                </a>
+          <nav class="nav"> 
+              <div class="nav__hamburger">
+    
+                <i class="fas fa-align-justify"></i>
+    
               </div>
-              <ul class="nav__list">
-                <li class="nav__item">
-                    <a href="#home" class="nav__link scroll">Home</a>
-                </li>
-            
-                <li class="nav__item">
-                    <a href="#category" class="nav__link scroll">Category</a>
-                </li>
-            
-                <li class="nav__item">
-                    <a href="#news" class="nav__link scroll">Blog</a>
-                </li>
-            
-                <li class="nav__item">
-                    <a href="#contact" class="nav__link scroll">Contact</a>
-                </li>
+             
+              <div class="nav__logo">
+             
+                  <a href="./index.html" class="scroll-link">SurfandSkate</a>
                 
-                <li class="nav__item">
-                    <a href="#about" class="nav__link scroll">About</a>
-                </li>
-            
-            </ul>
-          </div>
-
-<!--ICONS-->
-
-<div class="nav__icons">
-<!--User Icon from font awesome-->
-<a href="#user" class="icon__item">
-<i class="fas fa-user"></i>
-</a>
-<!--Search icon from font awesome-->
- <a href="#search" class="icon__item">
-<i class="fas fa-search"></i>
- <span id="cart__total">0</span>
- </a>
- <!--Shopping cart icon from font awesome-->
-<a href="#cart" class="icon__item">
- <i class="fas fa-shopping-cart"></i>
-</a>
-
-</div>
-      </nav>
+              </div>
+    
+              <div class="nav__menu open">
+                  <div class="menu__top">
+                      <span class="nav__category">SurfandSkate</span>
+                    <a href="#" class="close__toggle">
+    
+                <!--Menu icon from font awesome-->
+                    
+                <i class="fas fa-times"></i>
+                    </a>
+                  </div>
+                  <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="./index.html" class="nav__link scroll">Home</a>
+                    </li>
+                
+                    <li class="nav__item">
+                        <a href="./category/displayCategory.php" class="nav__link scroll">Collection</a>
+                    </li>
+                
+                    <li class="nav__item">
+                        <a href="#news" class="nav__link scroll">Blog</a>
+                    </li>
+                
+                    <li class="nav__item">
+                        <a href="./php/contactForm.php" class="nav__link scroll">Contact</a>
+                    </li>
+                    
+                    <li class="nav__item">
+                        <a href="./about.html" class="nav__link scroll">About</a>
+                    </li>
+                
+                </ul>
+              </div>
+    
+    <!--ICONS-->
+    
+    <div class="nav__icons">
+    
+    <!--Admin icon from font awesome-->
+     <a href="./adminPage.html" class="icon__item">
+        <i class="fas fa-user-lock"></i>
+     <span id="cart__total">0</span>
+     </a>
+     <!--Shopping cart icon from font awesome-->
+    <a href="#cart" class="icon__item">
+     <i class="fas fa-shopping-cart"></i>
+    </a>
+    
     </div>
-</div>
-
-   <!--Hero Area-->
+          </nav>
+        </div>
+    </div>
+    </header>
+ <!--header end-->
+   <!--Main Area-->
 
 <div class="hero">
     <div class="glide" id="glide_1">
@@ -116,11 +116,11 @@
         <span>Create Your Wave</span>
         <h1>Surf's Up</h1>
         <p>Skateboard and Surfboard collections</p>
-        <a href="#" ><button class="hero__btn">SHOP NOW!</button></a>
+        <a href="./category/displayCategory.php" ><button class="hero__btn">Get now!</button></a>
     </div>
 <div class="hero__right">
     <div class="hero__img-container">
-        <img src="./images/products/aquaJetBlack.jpg" alt="" class="banner_01">
+        <img src="./images/products/productsBeforeUpload/STSX-2021-21-min.jpg" alt="" class="banner_01">
     </div>
 </div>
 
@@ -133,11 +133,11 @@
                         <span>Create Your Wave</span>
                         <h1>Surf the Wave </h1>
                         <p>Skateboard and Surfboard collections</p>
-                        <a href="#" ><button class="hero__btn">SHOP NOW!</button></a>
+                        <a href="./category/displayCategory.php" ><button class="hero__btn">Get now!</button></a>
                     </div>
                 <div class="hero__right">
                     <div class="hero__img-container">
-                        <img src="./images/products/jetSTSX.jpg" alt="" class="banner_02">
+                        <img src="./images/products/productsBeforeUpload/jetSurfSTSX.jpeg.png" alt="" class="banner_02">
                     </div>
                 </div>
                 
@@ -150,11 +150,11 @@
                                         <span>Create Your Wave</span>
                                         <h1>Own the Tide </h1>
                                         <p>Skateboard and Surfboard collections</p>
-                                        <a href="#" ><button class="hero__btn">SHOP NOW!</button></a>
+                                        <a href="./category/displayCategory.php" ><button class="hero__btn">Get now!</button></a>
                                     </div>
                                 <div class="hero__right">
                                     <div class="hero__img-container">
-                                        <img src="./images/products/hydrofoilSurfboard.jpg" alt="" class="banner_03">
+                                        <img src="./images/products/FileaquaJetBlue.jpg" alt="" class="banner_03">
                                     </div>
                                 </div>
                                 
@@ -165,13 +165,6 @@
            
           </ul>
         </div>
-
-
-        <div class="glide__bullets" data-glide-el="controls[nav]">
-            <button class="glide__bullet" data-glide-dir="=0"></button>
-            <button class="glide__bullet" data-glide-dir="=1"></button>
-           
-          </div>
           <div class="glide__arrows" data-glide-el="controls">
             <button class="glide__arrow glide__arrow--left" data-glide-dir="<">
 
@@ -187,7 +180,7 @@
       
 </div>
 
- </header>
+
  
 
 <!--Main-->
@@ -199,26 +192,26 @@
 <div class="collection__container">
     <div class="collection__box">
         <div class="img__container">
-            <img src="./images/products/QuadTronSkateBoard.jpg" class="collection_02">
+            <img src="./images/products/productsBeforeUpload/QuadTronSkateBoard.jpg" class="collection_02">
         </div>
         <div class="collection__content">
             <div class="collection__data">
                 <span>Off-Road Collection</span>
                 <h1>Skateboards</h1>
-                <a href="#">SHOP NOW!</a>
+                <a href="./category/displayCategory.php">SHOP NOW!</a>
             </div>
         </div>
     </div>
     
     <div class="collection__box">
         <div class="img__container">
-            <img src="./images/products/streetCarverSkateBoard.jpg" class="collection_01">
+            <img src="./images/products/productsBeforeUpload/streetCarverSkateBoard.jpg" class="collection_01">
         </div>
         <div class="collection__content">
             <div class="collection__data">
                 <span>Carver Collection</span>
                 <h1>Skateboards</h1>
-                <a href="#">SHOP NOW!</a>
+                <a href="./category/displayCategory.php">SHOP NOW!</a>
             </div>
         </div>
     </div>

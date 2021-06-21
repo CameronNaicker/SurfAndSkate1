@@ -3,7 +3,6 @@ Reset
 --------------------------------------------------------------------------
 */
 
-  
 :root{
   --primaryColor: #f1f1f1;
     --black: #222;
@@ -28,15 +27,15 @@ Reset
 }
 
 html{
-font-size: 62.5%;
+font-size: 63%;
 box-sizing: border-box;
 
 }
 body,input{
     font-size: 1.6rem;
-    font-weight: 400;
-    font-family: 'Archivo',sans-serif;
-    color: var(--black);
+    font-weight: 350;
+    font-family: 'Merriweather', serif;
+    color: black;
 
 }
 a{
@@ -57,14 +56,19 @@ h4{
 font-weight: 500;
 }
 /*
+-------------------------------------------------------------------------
 Header
 */
 .header{
-    position: relative;
+height: 100px;
+width: 100%;
+z-index: 12;
+position: fixed;
+    
 }
 .container{
     width: 100%;
-    max-width: 117rem;
+    max-width: 120rem;
     margin: 0 auto;
     padding: 0 1.6rem;
 }
@@ -74,6 +78,7 @@ Navigation
 */
 
 .navigation{
+ 
     position: relative;
     height: 7rem;
     box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, .1);
@@ -141,7 +146,7 @@ width: 23rem;
 }
 
 .nav__list .nav__link:hover{
-   color: var(--orange); 
+   color: #33e3ff; 
 }
 
 
@@ -175,7 +180,7 @@ position: relative;
 }
 
 .nav__icons .icon__item:hover{
-    background-color: var(--orange);
+    background-color: #33e3ff;
     border: 1px solid var(--black);
 }
 
@@ -198,7 +203,8 @@ position: relative;
 }
 /*
 --------------------------------------------------------------------------
-Navigation query
+Navigation query 
+Mobile screen sizing
 */
 
 @media only screen and (max-width: 768px){
@@ -238,7 +244,7 @@ width: 30rem;
 }
 /*
 --------------------------------------------------------------------------
- Font Awesome Stuff
+ Font Awesome Details 
 
  */
 
@@ -257,8 +263,7 @@ width: 30rem;
 
 }
 .nav__list{
-
-    flex-direction: column;
+flex-direction: column;
 align-items: flex-start;
 padding: 1.6rem 1rem;
 
@@ -288,7 +293,7 @@ body.active::before{
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: var(--black) none no-repeat 0 0;
+    background-color: var(--primaryColor) none no-repeat 0 0;
     opacity: .7;
     z-index: 999;
     transition: .8s;
@@ -316,24 +321,17 @@ height: 1.5rem;
 }
 /*
 --------------------------------------------------------------------------
-Hero Area 
+Main Area 
 */
 
 
 .hero,
 .hero .glide__slides{
-
-    background-color: var(--primaryColor);
     position: relative;
     width: 100%;
     height: 100vh;
 }
-.hero .glide__bullet{
 
-    background-color: var(--black);
-    width: 1.2rem;
-    height: 1.2rem;
-}
 
 .hero .glide__arrow{
 
@@ -346,7 +344,7 @@ Hero Area
 
 .glide__arrow:hover{
 
-    background-color: var(--black3);
+    background-color: #33e3ff;
 
 }
 
@@ -454,7 +452,7 @@ Deciding whether to make the second slide banner smaller
 
 /*
 --------------------------------------------------------------------------
-Hero Area Media Query
+Main Area Media Query
 
 */
 

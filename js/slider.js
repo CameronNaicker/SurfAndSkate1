@@ -9,7 +9,7 @@ const slider1=document.getElementById("glide_1");
 
 /*
 
-HERO STUFF
+Main Area STUFF
 
 */
 
