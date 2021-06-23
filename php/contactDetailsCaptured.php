@@ -35,5 +35,9 @@ echo "Error" .$sql ."". mysqli_error($conn);
     mysqli_close($conn);
 
 }
+?>
+<html>
+<input type="button" value="Go back!" onclick="history.back()">
 
+</html>
 

@@ -27,17 +27,5 @@ navClose.addEventListener('click', ()=>{
     
 
 
-
-/*
-Pop Up
-*/
-
-/*
-fixed navigation
-*/
-
-// Smooth Scroll
-//Fix navBar
-
 //AOS
 AOS.init();

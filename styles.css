@@ -26,12 +26,20 @@ Reset
     box-sizing: inherit;
 }
 
+
+
 html{
 font-size: 63%;
 box-sizing: border-box;
 
 }
-body,input{
+input{
+    font-size: 1.6rem;
+    font-weight: 350;
+    font-family: 'Merriweather', serif;
+    color: black;
+}
+body{
     font-size: 1.6rem;
     font-weight: 350;
     font-family: 'Merriweather', serif;
