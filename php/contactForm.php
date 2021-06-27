@@ -7,17 +7,40 @@
     Contact Us - Surf and Skate
 </title>
 <link rel="stylesheet" href="styles.css"/>
+
 <style>
 
-
+#name{
+    font-family: 'Merriweather', serif;
+    font-weight:bold;
+}
 
     body{
         background-color: gray;
         background-image:url("./skateboard-background1.jpg");
+        
     }
 
     h1{
         color: black; 
+        font-weight:bold;
+    }
+    #send{
+        width: 20%;
+padding: 14px 20px;
+margin: 8px 0;
+
+    }
+    #button{
+        width: 10%;
+padding: 14px 20px;
+margin: 8px 0;
+    }
+    input{
+        width: 85%;
+padding: 14px 20px;
+margin: 8px 0;
+
     }
 </style>
 
@@ -35,33 +58,37 @@
    
 <tr>
     <td>
-<label>Name:</label></td>  
+<label id="name">Name:</label></td>  
 <td><input type="text" name="first_name" placeholder="Name"> </td>
 </tr>
 <tr>
     <td>
-<label>Surname:</label>  
+<label id="name">Surname:</label>  
 <td><input type="text" name="last_name" placeholder="Surname"></td>
 </tr>
 <tr>
     <td>
-<label>E-Mail:</label>  
+<label id="name">E-Mail:</label>  
 <td><input type="email" name="emailAddress" placeholder="example@gmail.com"></td>
 </tr>
 <tr>
     <td>
-<label>Comments:</label>  
+<label id="name">Comments:</label>  
 <td><textarea name="comments" rows="5" cols="40" placeholder="Comments..."></textarea></td>
 </tr>
-<tr>
-    <td><input type="submit" name="save" value="Submit"></td>
-</tr>
+
+
 
 
 </table>
 <center>
+<td><input type="submit" id="send"name="save" value="Submit"></td>
 
-<input type="button" value="Go back!" onclick="history.back()">
+</center>
+
+<center>
+<br>
+<input type="button" value="Go back!" id="button"onclick="history.back()">
 
 
 </center>

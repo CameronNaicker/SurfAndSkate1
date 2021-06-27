@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -29,10 +30,16 @@
 <link rel="stylesheet" href="styles.css"/>
 
 <style>
-  
+  @media screen and (max-width: 500px) {
+/* applies only if the screen is narrower than 500px */
+  .tabs {
+    padding: 3px 1em
+  }
+}
     body,html{
         height: 100%;
         background-image: url("./images/surf-background1.jpg");
+        background-color: lightblue;
         height: 100%;
         background-repeat: no-repeat;
         background-size: cover;
@@ -102,13 +109,12 @@
     <div class="nav__icons">
     
     <!--Admin icon from font awesome-->
-     <a href="./adminPage.html" class="icon__item">
+     <a href=".//productUploads/adminPage.html" class="icon__item">
         <i class="fas fa-user-lock"></i>
      </a>
      <!--Shopping cart icon from font awesome-->
-    <a href="#cart" class="icon__item">
+    <a href="./productUp/index.php" class="icon__item">
      <i class="fas fa-shopping-cart"></i>
-     <span id="cart__total">0</span>
 
     </a>
     

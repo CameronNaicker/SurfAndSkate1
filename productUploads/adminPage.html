@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Login</title>
+    <link rel="shortcut icon" href="./images/icon.ico" type="image/x-icon"/>
+    <script src="./js/adminLogin.js"></script>
+
+    <!--Internal CSS-->
+
+    <style>
+        body{
+             background-color: lightblue;
+
+            font-family: 'Lucida Sans',sans-serif;
+        }
+
+        #button {
+  background-color: orangered;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 30%;
+}
+
+input{
+
+width: 50%;
+padding: 14px 20px;
+margin: 8px 0;
+
+
+
+}
+
+    </style>
+</head>
+<body>
+
+    <!--Admin Login Page-->
+
+    <center>
+    <form action="./uploadProduct.php" onsubmit="validate()">
+
+    <table border="1">
+<br>
+
+<label> Admin Name </label> <br>
+
+<input type="text" placeholder="Enter username" id="username"><br>
+<br>
+<label> Password </label> <br>
+<input type="password" placeholder="Enter your password" id="password"> <br>
+<br>
+<input type="submit" name="submit" id="button" value="Login" onclick="validate()">
+<br>
+<br>
+<input type="button" value=" back to Home Page"  onclick="history.back()">
+
+
+
+        </table>
+    </form>
+    </center>
+</body>
+</html>

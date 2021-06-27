@@ -7,10 +7,12 @@
     <style>
 
         body{
-            background-color:gray;
+
+            background-image:url("./vector-seamless-pattern-doodle-skate-surf-hand-drawn-sketch-summer-beach-skateboard-isolated-white-background-185534361.jpg");
         }
 
         input{
+            font-family:'impact', serif;
             width: 50%;
             height: 5%;
             border: 1px;
@@ -22,13 +24,17 @@
             font-weight: bold;
 
         }
+        label{
+            font-family:'Merriweather',serif;
+            font-weight: bold;
+        }
 
     </style>
 </head>
 <body>
     <center>
 
-    <h1>Upload/ Insert Products into the Database</h1>
+    <h1>Upload Products into the Company Database</h1>
 
 <form action="" method="post" enctype="multipart/form-data">
 
@@ -41,6 +47,9 @@
 
 <label> Product Price</label> <br>
 <input type="text" name="productPrice" id="productPrice" placeholder="Enter price of product"/><br>
+
+<label> Product Code</label> <br>
+<input type="text" name="code" id="code" placeholder="Enter code of product"/><br>
 
 <input type="submit" name="upload" value="Upload"/> <br>
 
@@ -61,8 +70,9 @@ if (isset($_POST['upload'])) {
     $file = addslashes(file_get_contents($_FILES["productImg"]["tmp_name"]));
     $productDescr=$_POST ['productDescr'];
     $productPrice=$_POST['productPrice'];
+    $code=$_POST['code'];
 
-    $query="INSERT INTO products(productImg,productDescr,productPrice) VALUES ('$file','$productDescr','$productPrice')";
+    $query="INSERT INTO products(productImg,productDescr,productPrice,code) VALUES ('$file','$productDescr','$productPrice','$code')";
     $query_run = mysqli_query($connection,$query);
 
 

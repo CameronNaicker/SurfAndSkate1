@@ -4,6 +4,7 @@
    
     <title>Product Collection</title>
     <link rel="shortcut icon" href="./images/icon.ico" type="image/x-icon"/>
+    <link rel="stylesheet" href="styles.css"/>
 
 </head>
 
@@ -11,13 +12,20 @@
 
 body{
 
-   background-image: url("./vector-seamless-pattern-doodle-skate-surf-hand-drawn-sketch-summer-beach-skateboard-isolated-white-background-185534361.jpg") 
-   
+background-color:lightblue;   
 }
 
 input{
     font-family: 'Merriweather', serif;
 }
+
+}
+table{
+
+font-family: 'impact',serif;
+
+}
+
 </style>
 <body> 
     
@@ -25,13 +33,14 @@ input{
 <form action="" method="post" enctype="mulipart/form-data">
 
 <table border="1">
-<thead>
-    <tr>
-        <th>Product</th>
-        <th>Description</th>
-        <th>Price</th>
-    </tr>
-</thead>
+
+    
+        <th><label>Product</label> </th>
+        <th><label>Description</label></th>
+        <th><label>Price</label></th>
+
+
+
 
 <?php
 
@@ -43,48 +52,27 @@ $result=mysqli_query($connection, $query);
 
 while($row= mysqli_fetch_array($result)){
 
-    ?>
-
-<tr>
-             <td>
-
-
-
-<?php
-             echo '
-
-<tr>
-
-<td>
-
-<img src="data:image/jpeg;base64,'.base64_encode($row['productImg']).'"/>
-
-
-</td>
-
-
-</tr>
-
-';
 ?>
 
-
+<tr>
+<td>
+<tr>
+<td>
+<?php echo '<img src="data:image/jpeg;base64,'.base64_encode($row['productImg']).'"/>';?>
+</td>
+</tr>
 
 
 <td>
-
-    <?php echo $row['productDescr'];?>
-
+<?php echo $row['productDescr'];?>
 </td>
 <td>
-    <?php echo $row['productPrice'];?>
+<?php echo $row['productPrice'];?>
 </td>
 </tr>
 
 
 <?php
-
-
 }
 
 ?>
@@ -97,6 +85,50 @@ while($row= mysqli_fetch_array($result)){
 
 </center>
 
+<script src="https://www.paypal.com/sdk/js?&client-id=<Client-ID>&merchant-id=<Merchant-ID>"></script>
 
+<div id="paypal-button-container"></div>
+
+<script>
+
+paypal.Buttons({
+
+style: {
+
+  layout:  'vertical',
+
+  color:   'black',
+
+  shape:   'rect',
+
+  label:   'paypal'
+
+}
+
+}).render('#paypal-button-container');
+  paypal.Buttons({
+    createOrder: function (data, actions) {
+      return fetch('/my-server/create-order', {
+        method: 'POST'
+      }).then(function(res) {
+        return res.json();
+      }).then(function(data) {
+        return data.id;
+      });
+    },
+    onApprove: function (data, actions) {
+      return fetch('/my-server/capture-order/' + data.orderID, {
+        method: 'POST'
+      }).then(function(res) {
+        if (!res.ok) {
+          alert('Something went wrong');
+        }
+      });
+    }
+  }).render('#paypal-button-container');
+
+
+
+</script>
 </body>
 </html>

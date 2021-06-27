@@ -22,7 +22,8 @@ if(isset($_POST['save'])){
     VALUES ('$first_name','$last_name','$emailAddress','$comments')";
 
     if(mysqli_query($conn,$sql_query)){
-echo "Contact Form submitted successfully";
+        
+        echo '<script type="text/javascript"> alert ("Contact Sheet Submitted!")</script>';
 
 
 
@@ -37,7 +38,7 @@ echo "Error" .$sql ."". mysqli_error($conn);
 }
 ?>
 <html>
-<input type="button" value="Go back!" onclick="history.back()">
+<input type="button" value="Back to Home Page" onclick="./index.html">
 
 </html>
 
