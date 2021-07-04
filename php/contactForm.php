@@ -32,9 +32,19 @@ margin: 8px 0;
 
     }
     #button{
+        font:bold;
         width: 10%;
 padding: 14px 20px;
 margin: 8px 0;
+background-color:orange;
+    }
+
+    #F{
+        width: 85%;
+padding: 14px 20px;
+margin: 8px 0;
+        background-color:orangered;
+
     }
     input{
         width: 85%;
@@ -42,6 +52,13 @@ padding: 14px 20px;
 margin: 8px 0;
 
     }
+
+    #formT{
+        width: 50%;
+
+        background-color: lightblue;
+    }
+
 </style>
 
 
@@ -50,9 +67,9 @@ margin: 8px 0;
 <body>
     
     <br>  
-<form action="contactDetailsCaptured.php" method="post">
+<form action="contactDetailsCaptured.php" id="form" method="post">
 
-<table border="1" align="center">
+<table border="1" align="center" id="formT">
 
 <center><h1>Contact Us</h1></center>
    
@@ -82,13 +99,13 @@ margin: 8px 0;
 
 </table>
 <center>
-<td><input type="submit" id="send"name="save" value="Submit"></td>
+<td><input type="submit" id="send"name="save" value="Submit" id="F"></td>
 
 </center>
 
 <center>
 <br>
-<input type="button" value="Go back!" id="button"onclick="history.back()">
+<input type="button" value="Back to Home" id="button" onclick="history.back()">
 
 
 </center>

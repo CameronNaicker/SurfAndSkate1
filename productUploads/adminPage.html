@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin Login</title>
     <link rel="shortcut icon" href="./images/icon.ico" type="image/x-icon"/>
-    <script src="./js/adminLogin.js"></script>
+    <script src="./login.js"></script>
 
     <!--Internal CSS-->
 
@@ -44,17 +44,17 @@ margin: 8px 0;
     <!--Admin Login Page-->
 
     <center>
-    <form action="./uploadProduct.php" onsubmit="validate()">
+    <form name="adminForm" class="admin-form" method="POST" action="uploadProduct.php" >
 
     <table border="1">
 <br>
 
 <label> Admin Name </label> <br>
 
-<input type="text" placeholder="Enter username" id="username"><br>
+<input type="text" placeholder="Enter username" id="username" required><br>
 <br>
 <label> Password </label> <br>
-<input type="password" placeholder="Enter your password" id="password"> <br>
+<input type="password" placeholder="Enter your password" id="password" required> <br>
 <br>
 <input type="submit" name="submit" id="button" value="Login" onclick="validate()">
 <br>

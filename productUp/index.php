@@ -144,7 +144,6 @@ if(isset($_SESSION["cart_item"])){
 
   paypal.Button.render({
 
-    // Configure environment
 
     env: 'sandbox',
 
@@ -156,9 +155,7 @@ if(isset($_SESSION["cart_item"])){
 
     },
 
-    // Customize button (optional)
 
-	
 
     locale: 'en_US',
 
@@ -190,7 +187,7 @@ if(isset($_SESSION["cart_item"])){
 
           amount: {
 
-            total: '0.10', //test
+            total: '10.00', // dummy test
 
             currency: 'USD'
 
@@ -210,7 +207,7 @@ if(isset($_SESSION["cart_item"])){
 
         // Show a confirmation message to the buyer
 
-        window.alert('Thank you for your purchase!');
+        window.alert('Thank you for your purchase you will be notified about your product via email!');
 
       });
 

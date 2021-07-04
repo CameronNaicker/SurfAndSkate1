@@ -23,7 +23,7 @@ if(isset($_POST['save'])){
 
     if(mysqli_query($conn,$sql_query)){
         
-        echo '<script type="text/javascript"> alert ("Contact Sheet Submitted!")</script>';
+        echo '<script type="text/javascript"> alert ("Contact Sheet Submitted, please click the go back button to view the contacts page!")</script>';
 
 
 
@@ -38,7 +38,19 @@ echo "Error" .$sql ."". mysqli_error($conn);
 }
 ?>
 <html>
-<input type="button" value="Back to Home Page" onclick="./index.html">
+    <style>
+            #button{
+        width: 40%;
+padding: 14px 20px;
+margin: 8px 0;
+background-color:lightblue;
+    }
+    </style>
+    <body background="./skateboard-background1.jpg">
+        
+    <input type="button"  id="button" value="Go back to Contacts Page!"  onclick="history.back()">
+
+    </body>
 
 </html>
 
